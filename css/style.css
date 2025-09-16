@@ -28,13 +28,36 @@
 
 body {
   background: #040C18;
-  padding: 0 2rem;
+  /* padding: 0 0rem; */
 }
 
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  /* background: #040C18; */
+}
+
+/* Отдельное тело для последней страницы */
+.last-page {
+  width: 100%;
+  background: #031B34;
+  /* Фон последней страницы */
+  margin-bottom: 4px;
+  /* Отступ внизу */
+}
+
+/* Делаем внутренние элементы прозрачными */
+.last-page .final_cta,
+.last-page .footer {
+  background: transparent !important;
+}
+
+/* Центрируем контент внутри last-page */
+.last-page .section {
+  max-width: 1169px;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -158,7 +181,8 @@ p {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  background: #040C18;
+  /* background: #031b34; */
+  background: transparent !important;
 }
 
 .header .header-logo {
@@ -646,9 +670,13 @@ p {
   border-bottom-color: #fff;
 } */
 
+.blog_section {
+  margin-bottom: 340.43px;
+} 
+
 .final_cta {
   text-align: center;
-  margin: 145px 0 0 0;
+  /* margin: 145px 0 0 0; */
   background: #031B34;
   width: 100%;
 }
@@ -759,14 +787,49 @@ p {
 
 .footer__bottom {
   text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); */
+  background-color: #040C18;
 }
 
 .footer__bottom p {
   color: #ffffff;
   font-size: 12px;
   margin: 0;
+}
+
+/* .hero_section {
+  position: relative; 
+}
+*/
+
+.hero_circle1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1013px; 
+  height: 1013px;
+  z-index: 0; 
+}
+
+.hero_circle3 {
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 701px; 
+  height: 496px;
+  z-index: 0; 
+}
+
+
+.page {
+  position: relative;
+  z-index: 1; /* Выше круга */
+}
+
+.section {
+  position: relative;
+  z-index: 2; /* Еще выше */
 }
 
 /* Медиа запросы для адаптива */
