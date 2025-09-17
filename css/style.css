@@ -50,10 +50,10 @@ body {
 }
 
 /* Делаем внутренние элементы прозрачными */
-.last-page .final_cta,
+/* .last-page .final_cta,
 .last-page .footer {
   background: transparent !important;
-}
+} */
 
 /* Центрируем контент внутри last-page */
 .last-page .section {
@@ -749,6 +749,7 @@ p {
   /* margin: 145px 0 0 0; */
   background: #031B34;
   width: 100%;
+  height: 560px;
 }
 
 .final_cta__content {
@@ -761,7 +762,7 @@ p {
 
 .final_cta__title {
   font-size: 62px;
-  margin: 0;
+  /* margin: 500; */
   max-width: 800px;
 }
 
@@ -789,6 +790,7 @@ p {
   background: #031b34;
   /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
   margin-top: 4rem;
+  height: auto;
 }
 
 .footer__inner {
