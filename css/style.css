@@ -32,6 +32,7 @@ body {
 }
 
 .page {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,25 +174,29 @@ p {
 /* Стили для Шапки */
 
 .header {
+  position: fixed;
   display: flex;
   max-width: 1169px;
   margin: 0 auto;
   width: 100%;
   padding: 2rem 0;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   /* background: #031b34; */
   background: transparent !important;
 }
 
-.header .header-logo {
+.header .header__logo {
+  display: flex;
   width: 162px;
+  top: 362px; /* расстояние от верха */
 }
 
 .header .header__menu .menu {
   display: flex;
-  column-gap: 2rem;
+  column-gap: 3rem;
+  margin-left: -230px; /* Сдвигает влево */
+  top: 362px; /* расстояние от верха */
 }
 
 .header .header__menu .menu .menu__item a {
@@ -224,12 +229,12 @@ p {
 }
 
 .hero_section .hero_section__left {
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 3rem;
-  width: 75%;
+  row-gap: 1rem;
+  width: 100%;
 }
 
 .hero_section .hero_section__left .left__description {
@@ -242,8 +247,8 @@ p {
 }
 
 .hero_section .hero_section__left .left__cta_buttons input[type="text"] {
-  min-width: 250px;
-  width: 70%;
+  min-width: 260px;
+  width: 100%;
   padding: 8px 32px;
   border-radius: 4px 0 0 4px;
   border: 1px solid #052d56;
@@ -256,12 +261,16 @@ p {
 }
 
 .hero_section .hero_section__right {
-  height: 100%;
+  height: 701.59px;
+  width: 667.41px;
+  margin-top: -82px; /* Подбирайте нужное значение */
+  margin-right: -150px;
+  position: relative;
 }
 
-.hero_section .hero_section__right img {
+/* .hero_section .hero_section__right img {
   width: 100%;
-}
+} */
 
 /* Секция брендов */
 
@@ -814,13 +823,23 @@ p {
 
 .hero_circle3 {
   position: absolute;
-  top: 0;
-  left: 50;
+  bottom: 0;        /* Прижимаем к низу родителя */
+  right: 0;         /* Прижимаем к правому краю родителя */
+  top: auto;        /* Отменяем верхнее позиционирование */
+  left: auto;       /* Отменяем левое позиционирование */
   width: 701px; 
   height: 496px;
   z-index: 0; 
 }
 
+.hero_circle2 { 
+  position: absolute;
+  top: 1600px;
+  left: -100px;
+  width: 777px;
+  height: 777px;
+  z-index: 0; 
+}
 
 .page {
   position: relative;
