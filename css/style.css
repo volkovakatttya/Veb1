@@ -38,14 +38,14 @@ body {
   width: 100%;
   }
 
-/* Отдельное тело для последней страницы */
+
 .last-page {
   width: 100%;
-  background: #031B34;/* Фон последней страницы */
-  margin-bottom: 4px; /* Отступ внизу */
+  background: #031B34;
+  margin-bottom: 4px; 
 }
 
-/* Центрируем контент внутри last-page */
+
 .last-page .section {
   max-width: 1169px;
   margin: 0 auto;
@@ -117,14 +117,20 @@ h4 {
 
 h5 {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 200%;
 }
 
 h6 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
+}
+
+h7{
+    font-family: "Manrope", sans-serif;
+    color: #000000;
+    font-size: 12px;
 }
 
 
@@ -178,14 +184,14 @@ p {
 .header .header__logo {
   display: flex;
   width: 162px;
-  top: 362px; /* расстояние от верха */
+  top: 362px; 
 }
 
 .header .header__menu .menu {
   display: flex;
   column-gap: 3rem;
-  margin-left: -230px; /* Сдвигает влево */
-  top: 362px; /* расстояние от верха */
+  margin-left: -230px; 
+  top: 362px; 
 }
 
 .header .header__menu .menu .menu__item a {
@@ -215,13 +221,14 @@ p {
 
 
 /* Стили для первого экрана (Хиро секция) */
+
 .hero_section {
   display: flex;
   justify-content: space-between;
   column-gap: 1rem;
   min-height: 60vh;
   margin: 96px 0 3rem;
-  position: relative; /* относительное позиционирование */
+  position: relative; 
 }
 
 .hero_section .hero_section__left {
@@ -230,12 +237,14 @@ p {
   flex-direction: column;
   justify-content: center;
   row-gap: 1rem;
-  width: 50%; /* Фиксируем ширину левой части */
-  z-index: 2; /* Поднимаем над изображением */
+  width: 50%; 
+  z-index: 2; 
 }
 
-.hero_section .hero_section__left .left__description {
+ .hero_section .hero_section__left .left__description {
+  width: 120%;
   color: #81afdd;
+  margin-bottom: 2rem; 
 }
 
 .hero_section .hero_section__left .left__cta_buttons {
@@ -258,19 +267,18 @@ p {
 }
 
 .hero_section .hero_section__right {
-  position: absolute; /* Абсолютное позиционирование */
-  right: -65px; /* Позиционируем справа */
-  top: -120px; /* Поднимаем выше */
+  position: absolute; 
+  right: -65px; 
+  top: -120px; /* выше */
   height: 701.59px;
   width: 667.41px;
-  z-index: 1; /* Размещаем под текстом */
+  z-index: 1; /*  под текст */
 }
 
 .hero_section .hero_section__right img {
   width: 100%;
   height: auto;
 }
-
 
 /* Секция брендов */
 
@@ -280,8 +288,8 @@ p {
   align-items: center;
   padding: 0 0 6rem 0;
   column-gap: 3rem;
+  margin-top: 2rem;
 }
-
 /* Что такое Chat GPT */
 
 .what_is_chatgpt_section {
@@ -347,7 +355,7 @@ p {
 
 .what_is_chatgpt_section .what_is_chatgpt_section__bottom .bottom__container .container__content {
   color: #81afdd;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -386,7 +394,7 @@ p {
   flex: 3;
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 20px;
 }
 
 .future_here .future_here__right .right__container {
@@ -416,26 +424,15 @@ p {
   gap: -0.5rem;
 }
 
-.avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #ae67fa, #f49867);
-  border: 2px solid #031b34;
-  margin-left: -8px;
-}
-
-.avatar:first-child {
-  margin-left: 0;
-}
 
 .social_approve__text {
   color: #81afdd;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
 }
 
-/* Секция VR/AR с девушкой в шлеме */
+
+/* Часть с девушкой в шлеме */
 .vr_section {
   display: flex;
   justify-content: space-between;
@@ -492,7 +489,7 @@ p {
   line-height: 1.6;
 }
 
-/* Секция регистрации с градиентным фоном */
+/* Часть регистрации с фоном */
 .registration_banner {
   background: linear-gradient(90deg, #ae67fa 10%, #f49867 100%);
   margin: 4rem 0;
@@ -540,7 +537,7 @@ p {
   transform: translateY(-2px);
 }
 
-/* Секция блога */
+/* Часть с картинками */
 .blog_section {
   margin: 6rem 0;
 }
@@ -633,13 +630,14 @@ p {
 
 .blog_card__date {
   color: #81afdd;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 11.65px;
+  font-weight: lighter;
+  margin-bottom: 12px;
 }
 
-.blog_card__title {
+.blog_card__title1 {
   color: #fff;
-  font-size: 18px;
+  font-size: 25.11px;
   font-weight: bold;
   line-height: 1.4;
   text-align: left;
@@ -647,17 +645,37 @@ p {
   margin: 0;
 }
 
-.blog_card--large .blog_card__title {
-  font-size: 24px;
+.blog_card__title {
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: left;
+  white-space: pre-line;
+  margin: 0;
 }
 
-.blog_card__link {
+
+.blog_card__link1 {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
   align-self: flex-start;
+  font-weight: lighter;
+  margin-top: 204.116px;
+}
+
+.blog_card__link {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+  font-weight: lighter;
+  margin-top: 29.106px;
 }
 
 .blog_section {
@@ -731,20 +749,20 @@ p {
   color: #fff;
   font-size: 30px;
   margin-bottom: 1rem;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 
 .footer__address {
   color: #c2c9d0;
   font-size: 14px;
   line-height: 1.6;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 
 .footer__address2 {
   color: #c2c9d0;
   padding-top: 1.5rem;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 
 .footer__col__title {
@@ -799,10 +817,10 @@ p {
 
 .hero_circle3 {
   position: absolute;
-  bottom: 0;        /* Прижимаем к низу родителя */
-  right: 0;         /* Прижимаем к правому краю родителя */
-  top: auto;        /* Отменяем верхнее позиционирование */
-  left: auto;       /* Отменяем левое позиционирование */
+  bottom: 0;        
+  right: 0;         
+  top: auto;        
+  left: auto;  
   width: 701px; 
   height: 496px;
   z-index: 0; 
@@ -810,7 +828,7 @@ p {
 
 .hero_circle2 { 
   position: absolute;
-  top: 1600px;
+  top: 1450px;
   left: -100px;
   width: 777px;
   height: 777px;
